@@ -97,7 +97,7 @@ function App() {
             Swal.fire({
               title: "Eliminado",
               html: "<i> "+val.nombre+" fue eliminado.</i>",
-              icon: "success",
+              icon: "sucess",
               timer: 3000
             });
           })
