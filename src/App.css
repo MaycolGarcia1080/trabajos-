@@ -28,3 +28,7 @@
   height: 30px;
   margin-top: 5px;
 }
+.small-container {
+  max-width: 700px; /* Puedes ajustar este valor según tus necesidades */
+  margin: 0 auto; /* Esto centrará el contenedor en la página */
+}

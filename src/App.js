@@ -4,7 +4,6 @@ import Axios from "axios";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Swal from 'sweetalert2'
 
-
 function App() {
   const [nombre, setNombre] = useState("");
   const [edad, setEdad] = useState(""); 
@@ -77,7 +76,6 @@ function App() {
     });
   };
 
-
   const deleteEmple = (val) => {
     Swal.fire({
       title: "Confirmar eliminacion",
@@ -113,9 +111,6 @@ function App() {
     });
   };
   
-  
-
-  
   const limpiarCampos = () => {
     setAnios("");
     setNombre("");
@@ -144,10 +139,10 @@ function App() {
   };
 
   return (
-    <div className="container">
+    <div className="container small-container">
       <div className="card text-center">
         <div className="card-header">
-          GESTIÓN DE EMPLEADOS
+          GESTIÓN DE ESTUDUANTES
         </div>
         <div className="card-body">
           <div className="input-group mb-3">
@@ -194,9 +189,9 @@ function App() {
               aria-describedby="basic-addon3"
             />
           </div>
-
+          
           <div className="input-group mb-3">
-            <span className="input-group-text" id="basic-addon4">Cargo:</span>
+            <span className="input-group-text" id="basic-addon4">Materias:</span>
             <input
               type="text"
               value={cargo}
@@ -204,14 +199,14 @@ function App() {
                 setCargo(event.target.value);
               }}
               className="form-control"
-              placeholder="Ingrese Cargo"
+              placeholder="Ingrese Las materias"
               aria-label="Cargo"
               aria-describedby="basic-addon4"
             />
           </div>
-
+          
           <div className="input-group mb-3">
-            <span className="input-group-text" id="basic-addon5">Años:</span>
+            <span className="input-group-text" id="basic-addon5">Nota:</span>
             <input
               type="number"
               value={anios}
@@ -219,8 +214,8 @@ function App() {
                 setAnios(event.target.value);
               }}
               className="form-control"
-              placeholder="Ingrese Años"
-              aria-label="Años"
+              placeholder="Ingrese Nota"
+              aria-label="Nota"
               aria-describedby="basic-addon5"
             />
           </div>
@@ -250,7 +245,7 @@ function App() {
             <th scope="col">Edad</th>
             <th scope="col">País</th>
             <th scope="col">Cargo</th>
-            <th scope="col">Experiencia</th>
+            <th scope="col">Notas</th>
             <th scope="col">Acciones</th>
           </tr>
         </thead>
@@ -294,4 +289,3 @@ function App() {
 }
 
 export default App;
-
